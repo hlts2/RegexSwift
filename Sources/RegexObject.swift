@@ -5,7 +5,11 @@ public class RegexObject {
     private var regex: NSRegularExpression
     
     public init(pattern: String, options: NSRegularExpression.Options = []) {
-        regex = try! NSRegularExpression(pattern: pattern, options: options)
+        do {
+           regex = try NSRegularExpression(pattern: pattern, options: options)
+        } catch {
+            fatalError("not create NSRegularExpression")
+        }
     }
     
     public func match(target: String, start: Int = 0, end: Int? = nil) -> Bool {
