@@ -65,4 +65,5 @@ public class RegexObject {
         
         return Array(splitedArray[0..<times])
     }
+    
 }
