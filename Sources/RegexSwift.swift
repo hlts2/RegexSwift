@@ -4,7 +4,7 @@ open class RegexSwift {
     
     private init(){}
     
-    open static func compile(
+    open static func mustCompile(
                         pattern: String,
                         options: NSRegularExpression.Options = []) -> RegexObject {
         return RegexObject(pattern: pattern, options: options)
