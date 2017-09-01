@@ -1,14 +1,13 @@
 # RegexSwift
 RegexSwift is  simple regular expression wrapper library for swift
 
-## How to use
+## Example
+
 Fist, you need to import this library
 
 ```swift
 import RegexSwift
 ```
-
-## Example
 
 ### Match:
 
